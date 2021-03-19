@@ -17,11 +17,13 @@ Learn to create a pipeline that utilizes both an edge-device (DeepLens) and a cl
 * Use the diagram to create the pipeline - it is very similar to Module 1.
 * All of the necessary files and packages for Lambda are provided in the `/lambda-style-transfer`.
 * Make sure to fill in the **TODOs** in the `lambda-style-transfer.py` before deploying it.
+* Model we are using: https://github.com/onnx/models/tree/master/vision/style_transfer/fast_neural_style 
 
 ## 2. Create a custom DeepLens project - uploads a video frame (.jpg) when a "smile"/"happiness" is detected in the video frame
 * Steps for creating a custom DeepLens project is the same as the Module 6.
 * All of the necessary files and packages for DeepLens project are provided in the `/emotion-detection`.
 * Make sure to fill in the **TODOs** in the `emotion-detector.py` before deploying it.
+* Model we are using: https://github.com/onnx/models/tree/master/vision/body_analysis/emotion_ferplus
 * [NOTE]: You will notice that we are putting AWS credentials directly in the script - this is not the ideal way of doing it, but this is the easiest way to give the DeepLens the permission to access S3 without using IAM in AWS.
 
 ## 3. Install additional packages to DeepLens via SSH
