@@ -25,7 +25,7 @@ Learn to create a pipeline that utilizes both an edge-device (DeepLens) and a cl
 * [NOTE]: You will notice that we are putting AWS credentials directly in the script - this is not the ideal way of doing it, but this is the easiest way to give the DeepLens the permission to access S3 without using IAM in AWS.
 
 ## 3. Install additional packages to DeepLens via SSH
-* Additional packages: `Image` and `Cropper`
+* Additional packages: `PIL` and `Cropper`
   - Image: `sudo pip3.7 install pillow`
     - Used for processing video frames and saving new images as .jpg.
   - Cropper `sudo pip3.7 install autocrop`
