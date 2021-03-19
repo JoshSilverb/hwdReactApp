@@ -32,7 +32,8 @@ Learn to create a pipeline that utilizes both an edge-device (DeepLens) and a cl
     - Used to automatically detect faces and crop faces only. This is a necessary preprocessing step before predicting which emotion the face us expressing.
 
 ## 4. Use the s3-image-viewer-client script to automatically view the stylized.jpg in the S3 bucket
-* There is nothing for you to do with this script - you just have to run it on your local machine :)
+* There is nothing for you to do with this script - just fill in a **TODO** and you just have to run it on your local machine :)
+* If you want to stop running the client script, press `q`.
 
 ## Notes
 * To take a look at the logs of the DeepLens, use the Lambda logs, which can be found in the DeepLens console towards the bottom.
