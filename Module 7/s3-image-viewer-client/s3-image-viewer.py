@@ -1,4 +1,5 @@
 import os
+import time
 import cv2
 import boto3
 
@@ -23,11 +24,10 @@ while(True):
         stylizedImage = cv2.imread(stylizedImageFileName)
         cv2.imshow('s3 image', stylizedImage)
     except Exception as e:
-        print(e)
+	print(e)
+	time.sleep(3)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Removing the camera.
-cap.release()
 cv2.destroyAllWindows()
