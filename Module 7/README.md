@@ -17,7 +17,8 @@ Learn to create a pipeline that utilizes both an edge-device (DeepLens) and a cl
 * Use the diagram to create the pipeline - it is very similar to Module 1.
 * All of the necessary files and packages for Lambda are provided in the `/lambda-style-transfer`.
 * Make sure to fill in the **TODOs** in the `lambda-style-transfer.py` before deploying it.
-* Model we are using: https://github.com/onnx/models/tree/master/vision/style_transfer/fast_neural_style 
+* Model we are using: https://github.com/onnx/models/tree/master/vision/style_transfer/fast_neural_style
+* Use Python 3.6 for this.
 
 ## 2. Create a custom DeepLens project - uploads a video frame (.jpg) when a "smile"/"happiness" is detected in the video frame
 * Steps for creating a custom DeepLens project is the same as the Module 6.
