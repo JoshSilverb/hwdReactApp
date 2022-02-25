@@ -56,6 +56,9 @@ function App() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+    // Clear output text.
+    setOutputFileData("");
+
     // temporarily disable submit button
     setButtonDisable(true);
     setButtonText('Loading Result');
@@ -97,7 +100,7 @@ function App() {
       <div className="Input">
         <h1>Input</h1>
         <form onSubmit={handleSubmit}>
-          <input type="file" onChange={handleChange} />
+          <input type="file" accept=".png" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
         </form>
       </div>
