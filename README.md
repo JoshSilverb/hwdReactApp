@@ -22,6 +22,7 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 4. Once the repository is connected, deploy it by selecting "Deploy Branch".
 
 ## Notes
+* You can start customizing your website from `src/App.js`, specifically at the bottom of the code where you will see the website components such as `<div className="Input">` or `<input type="file" onChange={handleChange} />`.
 * Unlike the Jupyter notebook deployed on Heroku, we can have multiple people interact with the website all at the same time. This is possible because:
   1. API created with Lambda and Gateway API automatically scales up as multiple POST requests are made.
   2. The website data and UI are fetched and rendered to each of the users locally - html, css, and JavaScript code is downloaded to each of the users' browsers and rendered locally.
