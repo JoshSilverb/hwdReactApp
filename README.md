@@ -22,8 +22,11 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 4. Once the repository is connected, deploy it by selecting "Deploy Branch".
 
 ## Customizing React app
-* MacOS: https://www.geeksforgeeks.org/how-to-install-reactjs-on-macos/
-* Windows: https://www.geeksforgeeks.org/how-to-install-reactjs-on-windows/
+1. Install ReactJS.
+   - MacOS: https://www.geeksforgeeks.org/how-to-install-reactjs-on-macos/
+   - Windows: https://www.geeksforgeeks.org/how-to-install-reactjs-on-windows/
+2. Locally build and test.
+   - React development resource: https://reactresources.com/
 
 ## Notes
 * Unlike the Jupyter notebook deployed on Heroku, we can have multiple people interact with the website all at the same time. This is possible because:
