@@ -37,6 +37,9 @@ function App() {
 
   // handle file input
   const handleChange = async (event) => {
+    // Clear output text.
+    setOutputFileData("");
+
     console.log('newly uploaded file');
     const inputFile = event.target.files[0];
     console.log(inputFile);
@@ -55,9 +58,6 @@ function App() {
   // handle file submission
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    // Clear output text.
-    setOutputFileData("");
 
     // temporarily disable submit button
     setButtonDisable(true);
