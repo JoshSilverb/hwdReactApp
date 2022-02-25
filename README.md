@@ -21,6 +21,12 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 3. Find and connect the GitHub repository to Heroku by following the steps.
 4. Once the repository is connected, deploy it by selecting "Deploy Branch".
 
+## Step 3: Enable CORS policy on the API
+1. Go to the API Gateway console and go to the API console for your API.
+2. Under "Resources", select "Actions" and select "Enable CORS".
+3. Keep the default settings and select "Enable CORS and replace existing CORS headers".
+4. Give about 2-5 minutes for the API Gateway to update the API configurations.
+
 ## Customizing
 * Main resource: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file
 * You can start customizing your website from `src/App.js`, specifically at the bottom of the code where you will see the website components such as `<div className="Input">` or `<input type="file" onChange={handleChange} />`.
