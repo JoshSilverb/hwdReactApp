@@ -21,6 +21,10 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 3. Find and connect the GitHub repository to Heroku by following the steps.
 4. Once the repository is connected, deploy it by selecting "Deploy Branch".
 
+## Customizing React app
+* MacOS: https://www.geeksforgeeks.org/how-to-install-reactjs-on-macos/
+* Windows: https://www.geeksforgeeks.org/how-to-install-reactjs-on-windows/
+
 ## Notes
 * Unlike the Jupyter notebook deployed on Heroku, we can have multiple people interact with the website all at the same time. This is possible because:
   1. API created with Lambda and Gateway API automatically scales up as multiple POST requests are made.
