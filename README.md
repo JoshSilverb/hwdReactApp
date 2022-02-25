@@ -29,6 +29,13 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 * There is nothing for you to do with this script - just fill in a **TODO** and you just have to run it on your local machine :)
 * If you want to stop running the client script, press `q`.
 
+## Customizing React app
+1. Install ReactJS.
+   - MacOS: https://www.geeksforgeeks.org/how-to-install-reactjs-on-macos/
+   - Windows: https://www.geeksforgeeks.org/how-to-install-reactjs-on-windows/
+2. Locally build and test.
+   - React development resource: https://reactresources.com/
+
 ## Notes
 * To take a look at the logs of the DeepLens, use the Lambda logs, which can be found in the DeepLens console towards the bottom.
 * In an ideal situation, we should be fully utilizing the hardware-acceleration capabilities of the DeepLens device to do machine-learning model inference. Unfortunately, DeepLens' hardware-acceleration library does not support ONNX models, so we are using normal CPU to do inference using `onnxruntime` package.
