@@ -25,6 +25,7 @@ We will be creating and deploying a React app to Heroku that can do handwritten-
 1. Go to the API Gateway console and go to the API console for your API.
 2. Under "Resources", select "Actions" and select "Enable CORS".
 3. Keep the default settings and select "Enable CORS and replace existing CORS headers".
+4. Re-deploy the API.
 4. Give about 2-5 minutes for the API Gateway to update the API configurations.
 
 ## Customizing
