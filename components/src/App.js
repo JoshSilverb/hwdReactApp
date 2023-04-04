@@ -17,6 +17,7 @@ function App() {
   const [outputFileData, setOutputFileData] = React.useState(''); // represented as readable data (text string)
   const [buttonDisable, setButtonDisable] = React.useState(true);
   const [buttonText, setButtonText] = React.useState('Submit');
+  const [outputImage, setOutputImage] = React.useState('');
 
   // convert file to bytes data
   const convertFileToBytes = (inputFile) => {
@@ -39,6 +40,7 @@ function App() {
   const handleChange = async (event) => {
     // Clear output text.
     setOutputFileData("");
+    setOutputImage("");
 
     console.log('newly uploaded file');
     const inputFile = event.target.files[0];
@@ -84,6 +86,7 @@ function App() {
       else {
         const outputBytesData = JSON.parse(data.body)['outputResultsData'];
         setOutputFileData(decodeFileBase64(outputBytesData));
+        setOutputFileData('<img src="/src/digit.png">')
       }
 
       // re-enable submit button
@@ -99,6 +102,7 @@ function App() {
     <div className="App">
       <div className="Input">
         <h1>Input</h1>
+
         <form onSubmit={handleSubmit}>
           <input type="file" accept=".png" onChange={handleChange} />
           <button type="submit" disabled={buttonDisable}>{buttonText}</button>
@@ -106,6 +110,7 @@ function App() {
       </div>
       <div className="Output">
         <h1>Results</h1>
+        <p>{outputImage}</p>
         <p>{outputFileData}</p>
       </div>
     </div>
